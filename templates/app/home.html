@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ _('Reading time evaluation service | Home page') }}{% endblock %}
+
+{% block container %}
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3">{{ _('Reading time estimation service') }}</h1>
+      <p>
+        {{ _("Nowadays, we're all in hurry hence we need to count every second
+        of our time to enhance performance. This service will help you evaluate
+        approximate time of reading time. The service has got such options as
+        evaluation by a web-page link and evaluation of plain text insertion.") }}
+      </p>
+      <p>
+        <a class="btn btn-primary btn-lg" href="{{ url_for('app.evaluation_form') }}" role="button">{{ _('Evaluate') }} &raquo;</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Content container -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h2>{{ _('Pass a test') }}</h2>
+        <p>
+          {{ _('The test will help you evaluate your words per minute speed.') }}
+          <br>
+          <a href="http://www.readingsoft.com/">{{ _('English version only') }}</a>
+          <br>
+          {{ _("There is an option for other speakers as well. You can install
+          a browser extension called Spritzlet, open any link and try to play
+          with the speed of reading on any web-page. More details you'll
+          find here:") }}
+          <br>
+          <a href="http://www.spritzlet.com/">{{ _('Spritz extension') }}</a>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h2>{{ _('How is it work?') }}</h2>
+        <p>
+          {{ _('The algorithm of work is next: we count all words from web-page
+          or from text box of inserted text, divided words by the speed of
+          reading (default 200 WPM) and retrieve approximate time. E.g.: 2000
+          words / 200 WPC = 10 minutes of reading.') }}
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h2>{{ _('Contributions') }}</h2>
+        <p>
+          {{ _('It is an open source project, so any contribution,
+           ideas are welcome.') }}
+        </p>
+        <p>
+          <a class="btn btn-secondary" href="https://github.com/vald-phoenix/reading-time" role="button">{{ _('Jump to Github repository') }} &raquo;</a>
+        </p>
+      </div>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% from 'macroses/__render_field.html' import render_field %}
+
+{% block title %}{{ _('Reading time evaluation form') }}{% endblock %}
+
+{% block container %}
+  <!-- Content container -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <h1>{{ _('Reading time evaluation form') }}</h1>
+        {% include 'alert.html' %}
+        <form action="" method="post">
+          {{ form.csrf_token }}
+          {{ render_field(form.speed) }}
+          {{ render_field(form.url, size=form.url.render_kw.size) }}
+          {{ render_field(form.text, size=form.text.render_kw.size, rows=6) }}
+          {{ render_field(form.recaptcha) }}
+          <button class="btn btn-block btn-info" type="submit">{{ _('Evaluate!') }}</button>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}
