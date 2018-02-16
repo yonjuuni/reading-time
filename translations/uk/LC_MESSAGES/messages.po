@@ -1,0 +1,196 @@
+# Ukrainian translations for Reading Time.
+# Copyright (C) 2018 Vladyslav Krylasov <vladyslav.krylasov@gmail.com>
+# This file is distributed under the same license as the Reading Time
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Reading Time 1.0.0\n"
+"Report-Msgid-Bugs-To: vladyslav.krylasov@gmail.com\n"
+"POT-Creation-Date: 2018-02-16 13:46+0200\n"
+"PO-Revision-Date: 2018-02-16 13:04+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: uk\n"
+"Language-Team: uk <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: app/forms.py:16
+msgid "Speed"
+msgstr "Швидкість"
+
+#: app/forms.py:17
+msgid "Reading speed. Usually this value about 200 words per minute."
+msgstr "Швидкість читання. Зазвичай це значення близько 200 слів на хвилину."
+
+#: app/forms.py:25
+msgid "Paste URL address that should be estimated. Max length is 2083 characters."
+msgstr ""
+"Вставте URL адресу яка повинна бути оцінена. Максимальна довжина 2083 "
+"символи."
+
+#: app/forms.py:32
+msgid "Plain text"
+msgstr "Звичайний текст"
+
+#: app/forms.py:33
+msgid "Plain text for reading estimation. Max length is 5000-000 characters."
+msgstr "Звичайний текст для оцінки читання. Максимальна довжина 5000-000 символів."
+
+#: app/forms.py:45
+msgid "Invalid URL."
+msgstr "Невірна URL адреса."
+
+#: app/views.py:40
+#, python-format
+msgid ""
+"Text box estimation is next. Words counted: %(len)s. Reading time: ~ "
+"%(time)s min"
+msgstr ""
+"Оцінка текст бокса наступна. Слів пораховано: %(len)s. Час читання: ~ "
+"%(time)s хв"
+
+#: app/views.py:54
+msgid "This link is unreachable."
+msgstr "Посилання недосяжне."
+
+#: app/views.py:64
+#, python-format
+msgid ""
+"URL box estimation is next. Words counted: %(len)s. Reading time: ~ "
+"%(time)s min"
+msgstr ""
+"Оцінка URL бокса наступна. Слів пораховано: %(len)s. Час читання: ~ "
+"%(time)s хв"
+
+#: app/views.py:72
+msgid "You should specify at least one of next fields: URL or/and Text box."
+msgstr ""
+"Ви повинні визначити, принаймні, один з наступних полів: URL та/або текст"
+" бокс."
+
+#: templates/base.html:6
+msgid "Reading time estimation"
+msgstr "Оцінка часу читання"
+
+#: templates/base.html:53
+msgid "Get in touch"
+msgstr "Зв'язатися"
+
+#: templates/base.html:54
+msgid "About me"
+msgstr "Про мене"
+
+#: templates/base.html:57
+#, python-format
+msgid "Version %(version)s"
+msgstr "Версія %(version)s"
+
+#: templates/app/evaluation_form.html:4 templates/app/evaluation_form.html:11
+msgid "Reading time evaluation form"
+msgstr "Форма оцінки часу читання"
+
+#: templates/app/evaluation_form.html:19
+msgid "Evaluate!"
+msgstr "Оцінити!"
+
+#: templates/app/home.html:3
+msgid "Reading time evaluation service | Home page"
+msgstr "Сервіс оцінки часу читання | Домашня сторінка"
+
+#: templates/app/home.html:9
+msgid "Reading time estimation service"
+msgstr "Сервіс оцінки часу читання"
+
+#: templates/app/home.html:11
+msgid ""
+"Nowadays, we're all in hurry hence we need to count every second\n"
+"        of our time to enhance performance. This service will help you "
+"evaluate\n"
+"        approximate time of reading time. The service has got such "
+"options as\n"
+"        evaluation by a web-page link and evaluation of plain text "
+"insertion."
+msgstr ""
+"Сьогодні, ми всі поспішаємо, тому нам потрібно рахувати кожну секунду\n"
+"        нашого часу, щоб покращити продуктивність. Цей сервіс допоможе "
+"вам оцінити\n"
+"        приблизний час читання. Портал отримав такі опції як\n"
+"        оцінка веб-сторінки за посиланням, а також оцінка вставки "
+"звичайного тексту."
+
+#: templates/app/home.html:17
+msgid "Evaluate"
+msgstr "Оцінити"
+
+#: templates/app/home.html:26
+msgid "Pass a test"
+msgstr "Пройти тест"
+
+#: templates/app/home.html:28
+msgid "The test will help you evaluate your words per minute speed."
+msgstr "Тест допоможе вам оцінити вашу швидкість читання слів за хвилину."
+
+#: templates/app/home.html:30
+msgid "English version only"
+msgstr "Тільки англійська версія"
+
+#: templates/app/home.html:32
+msgid ""
+"There is an option for other speakers as well. You can install\n"
+"          a browser extension called Spritzlet, open any link and try to "
+"play\n"
+"          with the speed of reading on any web-page. More details you'll\n"
+"          find here:"
+msgstr ""
+"Є також варіант для інших носіїв мови також. Ви можете встановити\n"
+"          додаток для браузеру яке називається Spritzlet, відкрийте "
+"довільне посилання та спробуйте пограти\n"
+"          зі швидкістю читання на довільній веб-сторінці. Більше деталей "
+"ви\n"
+"          знайдете тут:"
+
+#: templates/app/home.html:37
+msgid "Spritz extension"
+msgstr "Spritz додаток"
+
+#: templates/app/home.html:41
+msgid "How is it work?"
+msgstr "Як це працює?"
+
+#: templates/app/home.html:43
+msgid ""
+"The algorithm of work is next: we count all words from web-page\n"
+"          or from text box of inserted text, divided words by the speed "
+"of\n"
+"          reading (default 200 WPM) and retrieve approximate time. E.g.: "
+"2000\n"
+"          words / 200 WPC = 10 minutes of reading."
+msgstr ""
+"Алгоритм роботи наступний: ми рахуємо всі слова на веб-сторінці\n"
+"          або з текст бокса вставленний текст, ділимо ці слова на "
+"швидкість \n"
+"          читання (зазвичай 200 слів на хвилину) та отримуємо приблизний "
+"час читання. Наприклад: 2000\n"
+"          слів / 200 слів (швидкість читання) = 10 хвилин читання."
+
+#: templates/app/home.html:50
+msgid "Contributions"
+msgstr "Внески"
+
+#: templates/app/home.html:52
+msgid ""
+"It is an open source project, so any contribution,\n"
+"           ideas are welcome."
+msgstr ""
+"Це проект з відкритим вихідним кодом, так що любі внески,\n"
+"           ідеї вітаються."
+
+#: templates/app/home.html:56
+msgid "Jump to Github repository"
+msgstr "Перейти до Github репозиторія"
