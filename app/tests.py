@@ -70,6 +70,20 @@ class TestCaseSite(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
 
     @wrap_test_context
+    def test_invalid_url_response(self):
+        response = self.client.post(
+            url_for('app.evaluation_form'),
+            data={
+                'speed': 200,
+                'url': 'xyz',
+                'text': ''
+            },
+            follow_redirects=True
+        )
+        self.assertIn(b'Invalid URL.', response.data)
+        self.assertEqual(response.status_code, 200)
+
+    @wrap_test_context
     def test_valid_url_response(self):
         response = self.client.post(
             url_for('app.evaluation_form'),
