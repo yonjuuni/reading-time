@@ -1,5 +1,5 @@
 .PHONY: requirements requirements-upgrade freeze cloc clean create-pot
-.PHONY: update-messages compile-messages
+.PHONY: update-messages compile-messages tests
 
 requirements:
 	-@echo "### Installing requirements"
@@ -45,3 +45,7 @@ update-messages:
 compile-messages:
 	-@echo "Compiling messages."
 	-@pybabel compile -d translations
+
+tests:
+	-@echo "Running tests..."
+	-@coverage run --source=app -m pytest app/tests.py -v && coverage report
