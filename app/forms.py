@@ -1,14 +1,24 @@
-import re
 from flask_babel import lazy_gettext as _
 from flask_wtf import FlaskForm, RecaptchaField
 from wtforms import ValidationError
 from wtforms.fields import IntegerField, TextAreaField
 from wtforms.fields.html5 import URLField
-from wtforms.validators import DataRequired, Length
+from wtforms.validators import DataRequired, Length, URL
 
-REGEXP = re.compile(
-    r'^[a-z]+://(?P<host>[^/:]+)(?P<port>:[0-9]+)?(?P<path>/.*)?$'
-)
+
+class URLValidator(URL):
+    """
+    Redefined WTForms URL class with the ability submit an empty URL field.
+    """
+    def __call__(self, form, field):
+        message = self.message
+        if message is None:
+            message = _('Invalid URL.')
+
+        if field.data:
+            match = super(URL, self).__call__(form, field, message)
+            if not self.validate_hostname(match.group('host')):
+                raise ValidationError(message)
 
 
 class EstimationForm(FlaskForm):
@@ -26,7 +36,7 @@ class EstimationForm(FlaskForm):
             'Paste URL address that should be estimated. Max length is 2083'
             ' characters.'
         ),
-        validators=[Length(max=2083)]
+        validators=[Length(max=2083), URLValidator()]
     )
     text = TextAreaField(
         label=_('Plain text'),
@@ -37,10 +47,3 @@ class EstimationForm(FlaskForm):
         validators=[Length(max=500000)]
     )
     recaptcha = RecaptchaField()
-
-    def validate_url(self, field):
-        if field.data:
-            if not REGEXP.search(field.data):
-                raise ValidationError(
-                    _('Invalid URL.')
-                )
