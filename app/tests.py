@@ -61,7 +61,7 @@ class TestCaseSite(unittest.TestCase):
             url_for('app.evaluation_form'),
             data={
                 'speed': 200,
-                'url': 'https://broken-url',
+                'url': 'https://broken1xyz1-url.com',
                 'text': ''
             },
             follow_redirects=True
@@ -75,7 +75,7 @@ class TestCaseSite(unittest.TestCase):
             url_for('app.evaluation_form'),
             data={
                 'speed': 200,
-                'url': 'xyz',
+                'url': 'https://xyz',
                 'text': ''
             },
             follow_redirects=True
