@@ -111,7 +111,3 @@ class TestCaseSite(unittest.TestCase):
         self.assertIn(b'info', response.data)
         self.assertIn(b'6', response.data)
         self.assertEqual(response.status_code, 200)
-
-    def test_robots_txt_response(self):
-        response = self.client.get('/robots.txt')
-        self.assertIn(b'User-agent', response.data)
