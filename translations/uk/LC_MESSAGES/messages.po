@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Reading Time 1.0.0\n"
 "Report-Msgid-Bugs-To: vladyslav.krylasov@gmail.com\n"
-"POT-Creation-Date: 2018-02-16 13:46+0200\n"
+"POT-Creation-Date: 2018-02-26 20:22+0200\n"
 "PO-Revision-Date: 2018-02-16 13:04+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk\n"
@@ -20,31 +20,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
 
-#: app/forms.py:16
+#: app/forms.py:10
 msgid "Speed"
 msgstr "Швидкість"
 
-#: app/forms.py:17
+#: app/forms.py:11
 msgid "Reading speed. Usually this value about 200 words per minute."
 msgstr "Швидкість читання. Зазвичай це значення близько 200 слів на хвилину."
 
-#: app/forms.py:25
+#: app/forms.py:19
 msgid "Paste URL address that should be estimated. Max length is 2083 characters."
 msgstr ""
 "Вставте URL адресу яка повинна бути оцінена. Максимальна довжина 2083 "
 "символи."
 
-#: app/forms.py:32
+#: app/forms.py:26
 msgid "Plain text"
 msgstr "Звичайний текст"
 
-#: app/forms.py:33
+#: app/forms.py:27
 msgid "Plain text for reading estimation. Max length is 5000-000 characters."
 msgstr "Звичайний текст для оцінки читання. Максимальна довжина 5000-000 символів."
-
-#: app/forms.py:45
-msgid "Invalid URL."
-msgstr "Невірна URL адреса."
 
 #: app/views.py:40
 #, python-format
@@ -78,15 +74,15 @@ msgstr ""
 msgid "Reading time estimation"
 msgstr "Оцінка часу читання"
 
-#: templates/base.html:53
+#: templates/base.html:63
 msgid "Get in touch"
 msgstr "Зв'язатися"
 
-#: templates/base.html:54
+#: templates/base.html:64
 msgid "About me"
 msgstr "Про мене"
 
-#: templates/base.html:57
+#: templates/base.html:67
 #, python-format
 msgid "Version %(version)s"
 msgstr "Версія %(version)s"
@@ -95,7 +91,11 @@ msgstr "Версія %(version)s"
 msgid "Reading time evaluation form"
 msgstr "Форма оцінки часу читання"
 
-#: templates/app/evaluation_form.html:19
+#: templates/app/evaluation_form.html:17
+msgid "or"
+msgstr "або"
+
+#: templates/app/evaluation_form.html:20
 msgid "Evaluate!"
 msgstr "Оцінити!"
 
@@ -194,3 +194,7 @@ msgstr ""
 #: templates/app/home.html:56
 msgid "Jump to Github repository"
 msgstr "Перейти до Github репозиторія"
+
+#~ msgid "Invalid URL."
+#~ msgstr "Невірна URL адреса."
+
