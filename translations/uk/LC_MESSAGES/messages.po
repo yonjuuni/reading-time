@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Reading Time 1.0.0\n"
 "Report-Msgid-Bugs-To: vladyslav.krylasov@gmail.com\n"
-"POT-Creation-Date: 2018-02-26 20:22+0200\n"
+"POT-Creation-Date: 2018-02-26 23:39+0200\n"
 "PO-Revision-Date: 2018-02-16 13:04+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk\n"
@@ -71,18 +71,23 @@ msgstr ""
 " бокс."
 
 #: templates/base.html:6
-msgid "Reading time estimation"
-msgstr "Оцінка часу читання"
+msgid ""
+"Reading time evaluation service of URL and/or inserted text by your own "
+"words per minute speed."
+msgstr ""
+"Сервіс оцінки часу читання URL адреси та/або вставленого тексту зі вказанням "
+"швидкості читання слів на хвилину."
 
-#: templates/base.html:63
+
+#: templates/base.html:64
 msgid "Get in touch"
 msgstr "Зв'язатися"
 
-#: templates/base.html:64
+#: templates/base.html:65
 msgid "About me"
 msgstr "Про мене"
 
-#: templates/base.html:67
+#: templates/base.html:68
 #, python-format
 msgid "Version %(version)s"
 msgstr "Версія %(version)s"
@@ -170,14 +175,17 @@ msgid ""
 "of\n"
 "          reading (default 200 WPM) and retrieve approximate time. E.g.: "
 "2000\n"
-"          words / 200 WPC = 10 minutes of reading."
+"          words / 200 WPM = 10 minutes of reading."
 msgstr ""
 "Алгоритм роботи наступний: ми рахуємо всі слова на веб-сторінці\n"
-"          або з текст бокса вставленний текст, ділимо ці слова на "
-"швидкість \n"
-"          читання (зазвичай 200 слів на хвилину) та отримуємо приблизний "
-"час читання. Наприклад: 2000\n"
+"          або з текст бокса вставленний"
+" текст, ділимо ці слова на швидкість"
+" \n"
+"          читання (зазвичай 200 слів на"
+" хвилину) та отримуємо приблизний час "
+"читання. Наприклад: 2000\n"
 "          слів / 200 слів (швидкість читання) = 10 хвилин читання."
+
 
 #: templates/app/home.html:50
 msgid "Contributions"
@@ -194,7 +202,3 @@ msgstr ""
 #: templates/app/home.html:56
 msgid "Jump to Github repository"
 msgstr "Перейти до Github репозиторія"
-
-#~ msgid "Invalid URL."
-#~ msgstr "Невірна URL адреса."
-
