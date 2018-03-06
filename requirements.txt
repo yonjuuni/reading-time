@@ -18,7 +18,7 @@ lxml==4.1.1
 MarkupSafe==1.0
 pluggy==0.6.0
 py==1.5.2
-pytest==3.4.1
+pytest==3.4.2
 pytz==2018.3
 requests==2.18.4
 six==1.11.0
