@@ -14,7 +14,7 @@ idna==2.6
 inscriptis==0.0.3.2
 itsdangerous==0.24
 Jinja2==2.10
-lxml==4.1.1
+lxml==4.2.0
 MarkupSafe==1.0
 pluggy==0.6.0
 py==1.5.2
