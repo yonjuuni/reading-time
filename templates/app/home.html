@@ -8,10 +8,10 @@
     <div class="container">
       <h1 class="display-3">{{ _('Reading time estimation service') }}</h1>
       <p>
-        {{ _("Nowadays, we're all in hurry hence we need to count every second
-        of our time to enhance performance. This service will help you evaluate
-        approximate time of reading time. The service has got such options as
-        evaluation by a web-page link and evaluation of plain text insertion.") }}
+        {{ _("Nowadays, we're all in a hurry, so we need to count every second
+        of our time to enhance our performance. This service will help you evaluate
+        approximate reading time of a given text. It works on full websites as well
+        as plain text.") }}
       </p>
       <p>
         <a class="btn btn-primary btn-lg" href="{{ url_for('app.evaluation_form') }}" role="button">{{ _('Evaluate') }} &raquo;</a>
@@ -25,31 +25,31 @@
       <div class="col-md-4">
         <h2>{{ _('Pass a test') }}</h2>
         <p>
-          {{ _('The test will help you evaluate your words per minute speed.') }}
+          {{ _('The test will help you evaluate your reading speed.') }}
           <br>
           <a href="http://www.readingsoft.com/">{{ _('English version only') }}</a>
           <br>
-          {{ _("There is an option for other speakers as well. You can install
+          {{ _("There is an option for other languages as well. You can install
           a browser extension called Spritzlet, open any link and try to play
-          with the speed of reading on any web-page. More details you'll
-          find here:") }}
+          with the reading speed on any website. You can find more details
+          here:") }}
           <br>
           <a href="http://www.spritzlet.com/">{{ _('Spritz extension') }}</a>
         </p>
       </div>
       <div class="col-md-4">
-        <h2>{{ _('How is it work?') }}</h2>
+        <h2>{{ _('How does it work?') }}</h2>
         <p>
-          {{ _('The algorithm of work is next: we count all words from web-page
-          or from text box of inserted text, divided words by the speed of
-          reading (default 200 WPM) and retrieve approximate time. E.g.: 2000
+          {{ _('The algorithm is the following: we count all the words from a 
+          website or from the text you provide, divide the number by the reading
+          speed (default 200 WPM) and get approximate reading time. E.g.: 2000
           words / 200 WPM = 10 minutes of reading.') }}
         </p>
       </div>
       <div class="col-md-4">
         <h2>{{ _('Contributions') }}</h2>
         <p>
-          {{ _('It is an open source project, so any contribution,
+          {{ _('It is an open source project, so any contributions or
            ideas are welcome.') }}
         </p>
         <p>
